@@ -66,7 +66,7 @@ async function getAllBlogPosts() {
                 const { metadata } = await convertMarkdownFile(filePath);
                 postData.push({
                     ...metadata,
-                    url: `/blog/${post.replace('.md', '.html')}`,
+                    url: `./blog/${post.replace('.md', '.html')}`,
                     filename: post
                 });
             }
@@ -111,7 +111,7 @@ async function buildPage(markdownPath, templatePath, outputPath, extraData = {})
         // Replace metadata and content in template
         let finalHtml = template
             .replace('{{content}}', html)
-            .replace('{{title}}', metadata.title || 'My Website')
+            .replace('{{title}}', metadata.title || 'FinCafe')
             .replace('{{description}}', metadata.description || '')
             .replace('{{date}}', metadata.date || '')
             .replace('{{author}}', metadata.author || '')
