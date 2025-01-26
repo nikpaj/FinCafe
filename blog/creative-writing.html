@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Art of Creative Writing</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/blog.css">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Your Name</div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/faq.html">FAQ</a></li>
-                <li><a href="/#contact">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <article class="blog-post">
-            <header class="post-header">
-                <div class="post-meta">
-                    <span class="post-date">2024-03-18</span>
-                    <span class="post-author">Your Name</span>
+            <header class="blog-header">
+                <h1>{{title}}</h1>
+                <div class="meta">
+                    <time datetime="2024-03-18">{{date}}</time>
                 </div>
             </header>
-            
-            <div class="post-content">
+            <div class="content">
                 <h1>The Art of Creative Writing</h1>
 <blockquote>
 <p>&quot;The first draft is just you telling yourself the story.&quot; - Terry Pratchett</p>
@@ -72,11 +72,16 @@
 <p><em>What story will you tell today?</em> </p>
 
             </div>
+            <footer class="blog-footer">
+                <a href="../blog.html">&larr; Back to Blog</a>
+            </footer>
         </article>
     </main>
 
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html> 

@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Essential Web Development Tips for 2024</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/blog.css">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Your Name</div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/faq.html">FAQ</a></li>
-                <li><a href="/#contact">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <article class="blog-post">
-            <header class="post-header">
-                <div class="post-meta">
-                    <span class="post-date">2024-03-19</span>
-                    <span class="post-author">Your Name</span>
+            <header class="blog-header">
+                <h1>{{title}}</h1>
+                <div class="meta">
+                    <time datetime="2024-03-19">{{date}}</time>
                 </div>
             </header>
-            
-            <div class="post-content">
+            <div class="content">
                 <h1>Essential Web Development Tips for 2024</h1>
 <p>Web development is constantly evolving. Here are some essential tips and best practices for modern web development in 2024.</p>
 <h2>1. Performance First</h2>
@@ -85,11 +85,16 @@ images.forEach(img =&gt; imageObserver.observe(img));
 <p>Stay updated with the latest web development trends and always prioritize user experience, performance, and accessibility. </p>
 
             </div>
+            <footer class="blog-footer">
+                <a href="../blog.html">&larr; Back to Blog</a>
+            </footer>
         </article>
     </main>
 
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html> 
