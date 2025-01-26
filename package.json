@@ -1,0 +1,25 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "## Development Plan",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "clean": "rm -rf dist/*",
+    "rebuild": "npm run clean && npm run build",
+    "watch": "node scripts/build.js && nodemon --watch content --watch src -e md,html,css,js scripts/build.js",
+    "serve": "serve dist",
+    "dev": "npm run build && concurrently \"npm run watch\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^15.0.6"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3",
+    "serve": "^14.2.1"
+  }
+}
