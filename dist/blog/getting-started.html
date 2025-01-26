@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Getting Started with Markdown Blogging</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/blog.css">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Your Name</div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/faq.html">FAQ</a></li>
-                <li><a href="/#contact">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <article class="blog-post">
-            <header class="post-header">
-                <div class="post-meta">
-                    <span class="post-date">2024-03-20</span>
-                    <span class="post-author">Your Name</span>
+            <header class="blog-header">
+                <h1>{{title}}</h1>
+                <div class="meta">
+                    <time datetime="2024-03-20">{{date}}</time>
                 </div>
             </header>
-            
-            <div class="post-content">
+            <div class="content">
                 <h1>Getting Started with Markdown Blogging</h1>
 <p>Welcome to my first blog post! In this article, I&#39;ll demonstrate various Markdown features that you can use in your blog posts.</p>
 <h2>Text Formatting</h2>
@@ -67,11 +67,16 @@ greet(&#39;World&#39;);
 <p>This is just a sample post showing various Markdown features. Feel free to modify and use it as a template for your own blog posts! </p>
 
             </div>
+            <footer class="blog-footer">
+                <a href="../blog.html">&larr; Back to Blog</a>
+            </footer>
         </article>
     </main>
 
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html> 
